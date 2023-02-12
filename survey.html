@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe-Survey</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="./survey.html">Coffee Survey</a></li>
+            <li><a href="./drinks.html">Drinks</a></li>
+            <li><a href="./brewing.html">Brewing</a></li>
+            <li><a href="./grinding.html">Grinding</a></li>
+            <li><a href="./roasting.html">Roasting</a></li>
+            <li><a href="./index.html">Home</a></li>
+        </ul>
+    </div>
+
+    <h1>Coffee Survey</h1>
+   
+    <form action="coffee-survey.php" method="post">
+    <fieldset>
+    <legend>Personal Information</legend>
+    Your Name<br/>
+    <input type="text" name="name" required size="40"/>
+    <br/>
+    Email Address<br/>
+    <input type="email" name="email" required placeholder="enter a valid email address"  size="40"/>
+    <br/>
+    </fieldset>
+    <fieldset>
+    <legend>Your Coffee Preferences:</legend>
+    Tell us your coffee preparation methods.<br/>
+    <textarea name="preparation" cols="40" rows="6" ></textarea>
+    <br/><br/>
+    Do you grind your own beans?<br/>
+    <input type="radio" name="grind" value="yes" />yes<br/>
+    <input type="radio" name="grind" value="no" />no<br/>
+    <br/>
+    How do you drink your coffee?<br/>
+    <input type="checkbox" name="drink" value="sugar" />with sugar<br/>
+    <input type="checkbox" name="drink" value="cream" />with cream<br/>
+    <br/>
+    What is your favorite coffee drink?<br/>
+    <select name="favorite">
+    <option value="">please select a drink</option>
+    <option value="drip">drip coffee</option>
+    <option value="french">french press</option>
+    <option value="espresso">espresso</option>
+    <option value="latte">latte</option>
+    <option value="flavored">flavored</option>
+    </select>
+    </fieldset>
+    </form>
+
+        <div class="footer">
+            <ul>
+                <li><a href="./survey.html">Coffee Survey</a></li>
+                <li><a href="./drinks.html">Drinks</a></li>
+                <li><a href="./brewing.html">Brewing</a></li>
+                <li><a href="./grinding.html">Grinding</a></li>
+                <li><a href="./roasting.html">Roasting</a></li>
+                <li><a href="./index.html">Home</a></li>
+            </ul>
+            
+            <div class="contact">
+                <p>Developed and Designed by Neeraj Kumar</p>
+                <p>Phone: 9466847564</p>
+                <p>Email: neerajkumarkhatri@gmail.com</p>
+            </div>
+        </div>
+</body>
+</html>
